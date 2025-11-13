@@ -19,7 +19,7 @@ export default function Contact() {
     const result = await response.json();
 
     if (result.success === "true") {
-      setStatus("Message Sent Successfully! 🎉");
+      setStatus("Message Sent Successfully! Thank you.");
       e.target.reset();
     } else {
       setStatus("Failed to send message. Try again.");
