@@ -28,13 +28,13 @@ export default function Contact() {
           <FaGithub />
         </a>
         <a
-          href="mailto:devrajyguru@gmail.com"
+          href="mailto:devrajyguru0@gmail.com"
           className="text-4xl text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
         >
           <FaEnvelope />
         </a>
         <a
-          href="https://wa.me/91XXXXXXXXXX" // ← replace with your number
+          href="https://wa.me/919499718782" 
           target="_blank"
           rel="noopener noreferrer"
           className="text-4xl text-gray-400 hover:text-teal-400 transition transform hover:scale-110"

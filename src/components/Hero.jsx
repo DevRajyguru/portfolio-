@@ -9,7 +9,7 @@ export default function Hero() {
     "AI Enthusiast",
     "Backend Stack Developer",
     "Problem Solver",
-    "Python Programmer",
+    "java Programmer",
 
   ];
 

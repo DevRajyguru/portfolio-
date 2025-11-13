@@ -10,7 +10,7 @@ export default function About() {
 
       {/* Description */}
       <p className="text-gray-300 max-w-3xl text-center mb-10 leading-relaxed">
-  👋 Hi! I’m <span className="text-teal-400">Dev Rajyguru</span>, a passionate
+   Hi! I’m <span className="text-teal-400">Dev Rajyguru</span>, a passionate
   <span className="text-teal-300"> Backend Developer</span> who loves building
   reliable, secure, and high-performance systems that power great digital experiences.
   I focus on writing clean, efficient, and scalable code while continuously exploring
