@@ -9,7 +9,7 @@ export default function Hero() {
     "AI Enthusiast",
     "Backend Stack Developer",
     "Problem Solver",
-    "java Programmer",
+    "Java Programmer",
 
   ];
 
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-blue-500 blur-2xl opacity-30"></div>
           <img
-            src="/profile.jpg" 
+            src="/dev.jpg" 
             alt=""
             className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
           />
@@ -37,7 +37,7 @@ export default function Hero() {
             Hi, I’m <span className="text-teal-400">Dev Rajyguru</span>
           </h1>
           <p className="text-lg text-gray-300 mb-6">
-            Backend  Developer | java Programmer | python Programmer | Tech Explorer
+            Backend Developer | Java Programmer | Python Programmer | Tech Explorer
           </p>
 
           {/* Tags */}
@@ -58,7 +58,7 @@ export default function Hero() {
             </div>
             <div className="bg-gray-800 rounded-xl p-4 text-center hover:bg-gray-700 transition">
               <p className="font-semibold text-teal-400">💼 Expertise</p>
-              <p className="text-gray-300">Web Dev, java Dev, Problem Solving</p>
+              <p className="text-gray-300">Web Dev, Java Dev, Problem Solving</p>
             </div>
             <div className="bg-gray-800 rounded-xl p-4 text-center hover:bg-gray-700 transition">
               <p className="font-semibold text-teal-400">📧 Contact</p>
