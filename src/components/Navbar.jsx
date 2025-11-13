@@ -1,4 +1,4 @@
- import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -33,6 +33,11 @@ export default function Navbar() {
           <Link to="/contact" className="text-gray-300 hover:text-teal-400 transition-colors">
             Contact
           </Link>
+
+          {/* NEW ➜ Resume Link */}
+          <Link to="/resume" className="text-gray-300 hover:text-teal-400 transition-colors">
+            Resume
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -51,40 +56,25 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center space-y-4 py-6">
-          <Link
-            to="/"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-teal-400 transition-colors"
-          >
+          <Link to="/" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
             Home
           </Link>
-          <Link
-            to="/about"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-teal-400 transition-colors"
-          >
+          <Link to="/about" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
             About
           </Link>
-          <Link
-            to="/skills"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-teal-400 transition-colors"
-          >
+          <Link to="/skills" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
             Skills
           </Link>
-          <Link
-            to="/projects"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-teal-400 transition-colors"
-          >
+          <Link to="/projects" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
             Projects
           </Link>
-          <Link
-            to="/contact"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-teal-400 transition-colors"
-          >
+          <Link to="/contact" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
             Contact
+          </Link>
+
+          {/* NEW ➜ Resume Link */}
+          <Link to="/resume" onClick={closeMenu} className="text-gray-300 hover:text-teal-400">
+            Resume
           </Link>
         </div>
       </div>

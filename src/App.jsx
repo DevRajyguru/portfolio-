@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { initAOS } from "./utils/aos-init";
+
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage"; // <-- NEW
 
 export default function App() {
   useEffect(() => {
@@ -17,6 +19,7 @@ export default function App() {
     <Router>
       <div className="bg-gray-900 text-white min-h-screen flex flex-col">
         <Navbar />
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,6 +27,7 @@ export default function App() {
             <Route path="/skills" element={<SkillsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/resume" element={<ResumePage />} />
           </Routes>
         </main>
       </div>
