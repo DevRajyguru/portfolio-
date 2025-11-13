@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-blue-500 blur-2xl opacity-30"></div>
           <img
-            src="/profile.jpg" // replace with your image in public folder
+            src="/profile.jpg" 
             alt=""
             className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
           />
@@ -51,8 +51,6 @@ export default function Hero() {
               </span>
             ))}
           </div>
-
-          {/* Info Cards */}
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-gray-800 rounded-xl p-4 text-center hover:bg-gray-700 transition">
               <p className="font-semibold text-teal-400">📍 Location</p>
@@ -60,15 +58,13 @@ export default function Hero() {
             </div>
             <div className="bg-gray-800 rounded-xl p-4 text-center hover:bg-gray-700 transition">
               <p className="font-semibold text-teal-400">💼 Expertise</p>
-              <p className="text-gray-300">Web Dev, AI/ML, Problem Solving</p>
+              <p className="text-gray-300">Web Dev, java Dev, Problem Solving</p>
             </div>
             <div className="bg-gray-800 rounded-xl p-4 text-center hover:bg-gray-700 transition">
               <p className="font-semibold text-teal-400">📧 Contact</p>
               <p className="text-gray-300">devrajyguru0@gmail.com</p>
             </div>
           </div>
-
-          {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-6 mt-4">
             <a href="https://github.com/DevRajyguru" target="_blank" className="hover:text-teal-400 text-2xl">
               <FaGithub />
@@ -76,7 +72,7 @@ export default function Hero() {
             <a href="mailto:devrajyguru0@gmail.com" className="hover:text-teal-400 text-2xl">
               <FaEnvelope />
             </a>
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" className="hover:text-teal-400 text-2xl">
+            <a href="https://wa.me/919499718782" target="_blank" className="hover:text-teal-400 text-2xl">
               <FaWhatsapp />
             </a>
           </div>
