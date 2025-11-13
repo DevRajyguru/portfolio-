@@ -1,76 +1,78 @@
-import { FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { useState } from "react";
 
-export default function ContactPage() {
+export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Stops page reload & redirect
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch(
+      "https://formsubmit.co/ajax/devrajyguru0@gmail.com",
+      {
+        method: "POST",
+        body: formData
+      }
+    );
+
+    const result = await response.json();
+
+    if (result.success === "true") {
+      setStatus("Message Sent Successfully! 🎉");
+      e.target.reset();
+    } else {
+      setStatus("Failed to send message. Try again.");
+    }
+  };
+
   return (
-    <section className="min-h-screen bg-gray-900 text-white px-6 pt-32 pb-16 flex flex-col items-center">
-      
-      {/* Title */}
-      <h2 className="text-4xl font-bold text-teal-400 mb-4">
-        Let’s Connect 
+    <section className="text-white px-6 py-20">
+      <h2 className="text-4xl font-bold text-teal-400 text-center mb-6">
+        Let's Connect
       </h2>
 
-      <p className="text-gray-300 text-lg max-w-2xl text-center mb-10">
-        I’d love to connect! Whether you want to discuss a project, collaborate, 
-        or just say hi — feel free to reach out anytime.
-      </p>
-
-      {/* Contact Icons */}
-      <div className="flex gap-10 text-4xl mb-10">
-        <a href="https://github.com/DevRajyguru" target="_blank" className="hover:text-teal-400">
-          <FaGithub />
-        </a>
-        <a href="mailto:devrajyguru0@gmail.com" className="hover:text-teal-400">
-          <FaEnvelope />
-        </a>
-        <a href="https://wa.me/919499718782" target="_blank" className="hover:text-teal-400">
-          <FaWhatsapp />
-        </a>
-      </div>
-
-      {/* CONTACT FORM (FormSubmit) */}
-      <form
-        action="https://formsubmit.co/devrajyguru0@gmail.com"
-        method="POST"
-        className="w-full max-w-2xl bg-gray-900 p-6 rounded-2xl border border-gray-700 shadow-lg space-y-4"
-      >
-        {/* Hidden Fields */}
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="box" />
-        <input type="hidden" name="_subject" value="New Message From Portfolio!" />
-
-        {/* Name */}
+      <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           required
-          className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 focus:outline-none border border-gray-700"
+          className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg"
         />
 
-        {/* Email */}
         <input
-          type="text"
+          type="email"
           name="email"
-          placeholder="Your Email or Phone"
+          placeholder="Your Email"
           required
-          className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 focus:outline-none border border-gray-700"
+          className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg"
         />
 
-        {/* Message */}
         <textarea
           name="message"
           placeholder="Your Message..."
           required
-          className="w-full p-3 h-36 rounded-lg bg-gray-800 text-gray-300 focus:outline-none border border-gray-700"
+          rows="5"
+          className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg"
         ></textarea>
 
-        {/* Submit Button */}
+        {/* Hidden fields (needed) */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
         <button
           type="submit"
-          className="w-full bg-teal-500 hover:bg-teal-600 p-3 rounded-lg font-semibold transition"
+          className="w-full bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg font-semibold"
         >
           Send Message
         </button>
+
+        {status && (
+          <p className="text-center text-teal-400 font-medium mt-2">
+            {status}
+          </p>
+        )}
       </form>
     </section>
   );

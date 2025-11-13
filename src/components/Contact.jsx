@@ -1,73 +1,77 @@
-import { useState } from "react";
+import { FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
-  const [status, setStatus] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // stop page reload
-
-    const formData = new FormData(e.target);
-
-    const response = await fetch("https://formsubmit.co/ajax/devrajyguru0@gmail.com", {
-      method: "POST",
-      body: formData
-    });
-
-    const result = await response.json();
-
-    if (result.success === "true") {
-      setStatus("Message Sent Successfully! ");
-      e.target.reset();
-    } else {
-      setStatus("Failed to send message. Try again.");
-    }
-  };
-
   return (
-    <section id="contact" className="text-white px-6 py-20">
-      <h2 className="text-4xl font-bold text-teal-400 text-center mb-4">
+    <section
+      id="contact"
+      className="py-24 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 text-white flex flex-col items-center justify-center px-6"
+      data-aos="fade-up"
+    >
+      {/* Title */}
+      <h2 className="text-4xl font-bold text-teal-400 mb-4 text-center">
         Let’s Connect
       </h2>
+      <p className="text-gray-300 text-center max-w-2xl mb-10 leading-relaxed">
+        I’d be happy to connect! Whether you want to discuss a project,
+        collaborate on something exciting, or just share ideas — feel free to
+        reach out anytime.
+      </p>
 
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-          className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:outline-none"
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          required
-          className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
-        />
-
-        <textarea
-          name="message"
-          placeholder="Your Message..."
-          required
-          rows="5"
-          className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
-        ></textarea>
-
-        {/* REQUIRED: Enable Ajax mode */}
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-
-        <button
-          type="submit"
-          className="w-full bg-teal-500 hover:bg-teal-600 py-3 rounded-lg text-white font-semibold"
+      {/* Social Icons */}
+      <div className="flex gap-8 mb-10">
+        <a
+          href="https://github.com/DevRajyguru"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-4xl text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
         >
-          Send Message
-        </button>
+          <FaGithub />
+        </a>
+        <a
+          href="mailto:devrajyguru0@gmail.com"
+          className="text-4xl text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+        >
+          <FaEnvelope />
+        </a>
+        <a
+          href="https://wa.me/919499718782" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-4xl text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+        >
+          <FaWhatsapp />
+        </a>
+      </div>
 
-        {status && (
-          <p className="text-center text-teal-400 mt-2 font-medium">{status}</p>
-        )}
+      {/* Contact Form */}
+      <form
+        action="#"
+        className="w-full max-w-lg bg-gray-800/40 rounded-2xl p-8 shadow-lg border border-gray-700"
+      >
+        <div className="flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full p-3 rounded-md bg-gray-900 text-gray-200 border border-gray-700 focus:border-teal-400 focus:outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Your Email or Phone"
+            className="w-full p-3 rounded-md bg-gray-900 text-gray-200 border border-gray-700 focus:border-teal-400 focus:outline-none"
+          />
+          <textarea
+            placeholder="Your Message..."
+            rows="5"
+            className="w-full p-3 rounded-md bg-gray-900 text-gray-200 border border-gray-700 focus:border-teal-400 focus:outline-none"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="mt-2 w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 rounded-md transition flex items-center justify-center gap-2"
+          >
+            Send Message
+          </button>
+        </div>
       </form>
     </section>
   );
