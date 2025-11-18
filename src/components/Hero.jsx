@@ -23,8 +23,8 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
         {/* Profile Image */}
         <div className="relative">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-blue-500 blur-2xl opacity-30"></div>
-          {/* <img
+          {/* <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-blue-500 blur-2xl opacity-30"></div>
+          <img
             src="/dev.jpg" 
             alt=""
             className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
