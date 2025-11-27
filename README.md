@@ -32,7 +32,7 @@ src/
 │   ├── Footer.jsx
 │   ├── Skills.jsx
 │   ├── Projects.jsx
-│   └── Contact.jsx 
+│   ├── Contact.jsx
 │
 │── pages/
 │   ├── Home.jsx
