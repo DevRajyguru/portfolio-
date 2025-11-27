@@ -3,10 +3,6 @@
 A modern, fully responsive personal portfolio website built using React, Tailwind CSS, and React Router, deployed on Vercel.
 This portfolio showcases my skills, projects, experience, and provides easy ways to contact me.
 
-🚀 Live Demo
-
-🔗 Portfolio Link: https://portfolio-theta-virid-43.vercel.app/
-
 🛠️ Tech Stack
 Frontend
 
