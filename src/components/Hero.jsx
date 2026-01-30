@@ -9,8 +9,8 @@ export default function Hero() {
     "AI Enthusiast",
     "Backend Stack Developer",
     "Problem Solver",
-    "PHP Programmer",
-
+    "PHP Developer",
+     "Laravel Developer",
   ];
 
   return (
@@ -36,9 +36,9 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-2">
             Hi, I’m <span className="text-teal-400">Dev Rajyguru</span>
           </h1>
-          <p className="text-lg text-gray-300 mb-6">
+          {/* <p className="text-lg text-gray-300 mb-6">
             Backend Developer | PHP Developer | Laravel Developer | Backend Systems
-          </p>
+          </p> */}
 
           {/* Tags */}
           <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
