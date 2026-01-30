@@ -37,7 +37,7 @@ export default function Hero() {
             Hi, I’m <span className="text-teal-400">Dev Rajyguru</span>
           </h1>
           <p className="text-lg text-gray-300 mb-6">
-            Backend Developer | PHP Programmer | Java Programmer | Tech Explorer
+            Backend Developer | PHP Developer | Laravel Developer | Backend Systems
           </p>
 
           {/* Tags */}
