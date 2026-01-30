@@ -10,7 +10,7 @@ export default function Hero() {
     "Backend Stack Developer",
     "Problem Solver",
     "PHP Developer",
-     "Laravel Developer",
+    "Laravel Developer",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-blue-500 blur-2xl opacity-30"></div>
           <img
-            src="/dev.jpg" 
+            src="/dev.jpg"
             alt=""
             className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
           />
@@ -33,7 +33,7 @@ export default function Hero() {
 
         {/* Right Side: Text */}
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-2">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
             Hi, I’m <span className="text-teal-400">Dev Rajyguru</span>
           </h1>
           {/* <p className="text-lg text-gray-300 mb-6">
