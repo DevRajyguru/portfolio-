@@ -1,16 +1,74 @@
-# React + Vite
+🌐 Dev Rajyguru — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive personal portfolio website built using React, Tailwind CSS, and React Router, deployed on Vercel.
+This portfolio showcases my skills, projects, experience, and provides easy ways to contact me.
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚛️ React.js
 
-## React Compiler
+🎨 Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ AOS (Animate On Scroll)
 
-## Expanding the ESLint configuration
+🎭 React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌐 React Router DOM
+
+Deployment
+
+▲ Vercel
+
+📁 Project Structure
+src/
+│── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Footer.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│
+│── pages/
+│   ├── Home.jsx
+│   ├── AboutPage.jsx
+│   ├── SkillsPage.jsx
+│   ├── ProjectsPage.jsx
+│   ├── ContactPage.jsx
+│
+│── utils/
+│   └── aos-init.js
+│
+│── App.jsx
+│── main.jsx
+│── index.css
+
+✨ Features
+🔹 Responsive Design
+
+Fully optimized for mobile, tablet, and desktop screens.
+
+🔹 Smooth Animations
+
+AOS library for scrolling animations.
+
+🔹 Dynamic Routing
+
+React Router to switch between pages without refreshing.
+
+🔹 Projects Showcase
+
+Well-structured cards displaying all major projects.
+
+🔹 Skills Section
+
+Beautiful animated skill icons with floating effects.
+
+🔹 Contact Form
+
+Integrated using FormSubmit → Messages directly delivered to my email.
+
+📄 License
+
+This project is licensed under the MIT License — free to use and modify.
