@@ -4,7 +4,7 @@ export default function Contact() {
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Stops page reload & redirect
+    e.preventDefault();
 
     const formData = new FormData(e.target);
 

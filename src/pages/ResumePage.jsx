@@ -11,21 +11,12 @@ export default function ResumePage() {
 
         {/* Download Button */}
         <a
-          href="/resume.pdf"
+          href="/Dev Rajyguru.pdf"
           download
           className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg"
         >
           Download Resume
         </a>
-
-        {/* Resume Viewer */}
-        <div className="mt-10 w-full h-[80vh] border border-gray-700 rounded-lg overflow-hidden shadow-xl">
-          <iframe
-            src="/Dev Rajyguru.pdf"
-            className="w-full h-full"
-            title="Dev Rajyguru Resume"
-          ></iframe>
-        </div>
       </div>
     </section>
   );
