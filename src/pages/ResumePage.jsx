@@ -6,7 +6,7 @@ export default function ResumePage() {
         <h1 className="text-4xl font-bold text-teal-400 mb-6">My Resume</h1>
 
         <p className="text-gray-300 mb-8 text-lg">
-          You can view my resume below or download it for later use.
+          You can download my resume for future reference.
         </p>
 
         {/* Download Button */}
